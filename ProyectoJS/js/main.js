@@ -7,6 +7,20 @@ $(document).ready(() => {
       }, 500);
     });
 
+  //CAMBIAR COLORES DE PAGINA
+  var tema = $("#theme");
+  $("#rojo").click( () => {  
+    tema.attr("href","css/rojo.css");
+  });
+
+  $("#verde").click( () => {    
+    tema.attr("href","css/verde.css");
+  });
+
+  $("#azul").click( () => {    
+    tema.attr("href","css/azul.css");
+  });
+
   //iniciar sesion pagina    
     $("#formSidebar").submit(() => {
       var nombreOptenidoInput = $("#nombreSidebar").val();
@@ -121,5 +135,6 @@ $(document).ready(() => {
     //moment().format("MMM Do YY");  
 
   }
+
 
 });

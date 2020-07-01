@@ -1,0 +1,19 @@
+body {
+    background: url("../img/morado.png");
+}
+
+#logo {
+    background: darkviolet;
+}
+
+#reloj {
+    color: darkviolet;
+}
+
+input[type=submit] {
+    background: blueviolet;
+}
+
+.publicacion button {
+    background: blueviolet;
+}

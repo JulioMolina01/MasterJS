@@ -3,8 +3,7 @@
     padding: 0px;
 }
 
-body {
-    background: url("../img/morado.png");
+body {    
     background-attachment: fixed;
 }
 
@@ -21,8 +20,41 @@ body {
     height: 130px;
 }
 
-#logo {
+#setTheme {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 60px;
+}
+
+#setTheme div{
+    display: block;
+    width: 40px;
+        
+    color: white;    
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    text-align: center;        
+    
+    cursor: pointer;
+}
+
+#rojo{
     background: darkred;
+}
+
+#verde{
+    background: darkgreen;
+}
+
+#azul{
+    background: mediumblue;
+}
+
+#logo {    
     padding: 5px;
     color: white;
     width: 45%;
@@ -92,8 +124,7 @@ body {
     text-align: center;
     margin-top: 90px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 65px;
-    color: darkred;
+    font-size: 65px;    
 }
 
 #acordeones {
@@ -184,8 +215,7 @@ select option {
 
 input[type=submit] {
     width: 80px;
-    height: 40px;
-    background: darkred;
+    height: 40px;    
     color: white;
     font-size: 12px;
     text-transform: uppercase;
@@ -241,14 +271,9 @@ input[type=submit] {
 .publicacion button {
     width: 85px;
     height: 35px;
-    border: none;
-    background: darkred;
+    border: none;    
     color: white;
 }
-
-
-
-
 
 #footer {
     background: rgba(255, 255, 255, 0.7);

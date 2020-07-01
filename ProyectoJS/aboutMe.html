@@ -12,6 +12,7 @@
 
     <!--Estilos-->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/primero.css" id="theme">
 
     <!--JQueryUI-->
     <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
@@ -38,6 +39,13 @@
             </ul>
         </nav>
     </header>
+
+    <!--Cambiar color-->
+    <div id="setTheme">
+        <div id="rojo">Red</div>
+        <div id="verde">Green</div>
+        <div id="azul">Blue</div>
+    </div>
 
     <!--Parte central de la pagina-->
     <section id="global">
@@ -84,7 +92,7 @@
 
             <form id="formSidebar">
                 <label for="name">Nombre</label>
-                <input name="name" type="text" placeholder="Nombre(s)">
+                <input id="nombreSidebar" name="name" type="text" placeholder="Nombre(s)">
 
                 <label for="email">Correo</label>
                 <input name="email" type="email" placeholder="Correo electronico">

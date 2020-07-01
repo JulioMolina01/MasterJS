@@ -1,0 +1,19 @@
+body {
+    background: url("../img/hojas.jpg");
+}
+
+#logo {
+    background: darkgreen;
+}
+
+#reloj {
+    color: forestgreen;
+}
+
+input[type=submit] {
+    background: forestgreen;
+}
+
+.publicacion button {
+    background: darkgreen;
+}

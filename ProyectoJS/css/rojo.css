@@ -1,0 +1,19 @@
+body {
+    background: url("../img/rojo.jpg");
+}
+
+#logo {
+    background: darkred;
+}
+
+#reloj {
+    color: darkred;
+}
+
+input[type=submit] {
+    background: darkred;
+}
+
+.publicacion button {
+    background: darksalmon;
+}

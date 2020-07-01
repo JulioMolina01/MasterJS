@@ -1,0 +1,20 @@
+body {
+    background: url("../img/cielo.jpg");
+}
+
+#logo {
+    background: darkblue;
+}
+
+#reloj {
+    color: darkblue;
+}
+
+input[type=submit] {
+    background: darkcyan;
+}
+
+.publicacion button {
+    background: darkcyan;
+}
+

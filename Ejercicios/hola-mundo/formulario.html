@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM, Eventos y Funciones</title>
+    <script src="js/ejercicio10.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url("holly.jpg");
+            background-size: cover;
+            padding: 0px;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: max-contain;
+            width: max-contain;
+            padding: 15px;
+            float: left;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .dashed {
+            border-radius: 10px;
+        }
+
+    </style>
+
+    <h1>Registro de Datos</h1>
+
+    <div class="box">
+        <h2>Ingresa tus datos</h2>
+        <hr>
+        <form id="formulario" onsubmit="return false;">
+            <label>Nombre:</label>
+            <input id="nombre" type="text" placeholder="Ingresa tu nombre">
+            <br><br>
+            <label>Apellido:</label>
+            <input id="apellido" type="text" placeholder="Ingresa tu apellido">
+            <br><br>
+            <label>Edad:</label>
+            <input id="edad" type="number" placeholder="Ingresa tu edad">
+            <br><br>
+            <button id="submit" type="submit">Enviar Datos</button>
+        </form>
+    </div>
+    <div id="dashed" class="box dashed">
+        <h2>Datos Ingresados</h2>
+        <hr>
+    </div>
+
+</body>
+
+</html>

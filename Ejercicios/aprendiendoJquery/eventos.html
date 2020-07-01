@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/02-eventos.js"></script>
+    <style>
+        .caja {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: white;
+            transition: 500ms all;
+            text-align: center;    
+            float: left;        
+            margin-left: 10px;
+        }
+
+        #sigueme{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background: yellow;
+            opacity: 0.5;
+            border: 2px solid black;
+            border-radius: 999px;
+        }
+
+        .whiteMode {
+            background-color: honeydew;
+            color: black;
+        }
+
+        .darkMode {
+            background-color: darkslategrey;
+            color: floralwhite;
+        }
+
+        input{
+            padding: 10px;            
+            font-size: 25px;
+        }
+
+        body{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body id="body">
+    
+    <h1 id="titulo">Learning Events</h1>
+    <h2>click - hover - blur & focus</h2>
+
+    <form action="">
+        <input type="text" id="datos" placeholder="Escribe cualquier cosa">        
+    </form>
+
+    <br>
+
+    <div class="caja" id="caja">
+        Touch me bby
+    </div>    
+    <div class="caja" id="otracaja">
+        otro Div
+    </div>
+
+    <div id="sigueme">
+        putito        
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url("../img/morado.png");
+    background-attachment: fixed;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#header {
+    background: rgba(255, 255, 255, 0.7);
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    height: 130px;
+}
+
+#logo {
+    background: darkred;
+    padding: 5px;
+    color: white;
+    width: 45%;
+    font-size: 20px;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 35px;
+    height: 40px;
+}
+
+#menu {
+    margin-top: 30px;
+    display: block;
+    background: #333;
+    width: 100%;
+}
+
+#menu ul {
+    display: inline-block;
+    line-height: 30px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#menu ul li {
+    display: inline-block;
+    text-align: initial;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-right: 25px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#global {
+    width: 70%;
+    margin: 0px auto;
+    padding: 15px;
+    background: #FBDFDA;
+    box-shadow: 0px 0px 2px gray;
+}
+
+/* .slider{
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+} */
+
+.bx-wrapper {
+    max-width: 100% !important;
+    height: 300px !important;
+}
+
+.bx-wrapper .bx-viewport {
+    height: 300px !important;
+}
+
+#reloj {
+    width: 60%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    margin-top: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    color: darkred;
+}
+
+#acordeones {
+    width: 60%;
+    float: left;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#accordion {
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#accordion h3 {
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #333;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#accordion div p {
+    display: block;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 200px;
+}
+
+#sidebar {
+    width: 25%;
+    padding: 20px;
+    float: right;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sidebar img {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 10px;
+}
+
+#sidebar span {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#sidebar #formSidebar {
+    margin-top: 35px;
+}
+
+form label {
+    font-size: 15px;
+}
+
+input[name=name],
+input[name=email],
+input[name=password] {
+    width: 90%;
+    margin-bottom: 15px;
+    display: block;
+    padding: 3px;
+}
+
+input[id=nameCF],
+input[id=lastNameCF],
+input[id=emailCF],
+input[id=yearsCF],
+input[id=fechaNacimientoCF],
+select {
+    width: 50%;
+    margin-bottom: 15px;
+    display: block;
+    padding: 3px;
+}
+
+select option {
+    background: #333;
+    color: white;
+}
+
+input[type=submit] {
+    width: 80px;
+    height: 40px;
+    background: darkred;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 5px 5px 10px 0px black;
+    cursor: pointer;
+}
+
+#contactForm {
+    margin-top: 30px;
+    width: 65%;
+    float: left;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#contactForm form {
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+#publicaciones {
+    margin-top: 30px;
+    width: 63%;
+    float: left;
+    margin-left: 20px;
+}
+
+.publicacion {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.publicacion h2 {
+    margin-bottom: 1px;
+}
+
+.publicacion span {
+    color: grey;
+}
+
+.publicacion p {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.publicacion button {
+    width: 85px;
+    height: 35px;
+    border: none;
+    background: darkred;
+    color: white;
+}
+
+
+
+
+
+#footer {
+    background: rgba(255, 255, 255, 0.7);
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+#goTop {
+    cursor: pointer;
+}

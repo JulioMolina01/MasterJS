@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <title>Aprendiendo JQuery</title>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/01-selectores.js"></script>  
+</head>
+<body>
+
+    <style>
+        .zebra{
+            border: 4px dashed black;
+        }
+        .resaltado{
+            border-bottom: 2px solid green;
+        }
+        body{
+            background-color:yellowgreen;
+        }
+    </style>
+
+    <ul>
+        <li> <a href="https://www.google.com" title="Google"> Click to Google </a></li>
+        <li> <a href="https://www.facebook.com" title="Facebook"> Click to Facebook </a></li>
+    </ul>
+
+    <h1>Aprendiendo JQuery</h1>
+    <p id="rojo" class="zebra">Ejercicios Rojo</p>
+    <p id="verde" class="sinClase">Ejercicios Verde</p>
+
+    <div id="caja">
+        <ul>
+            <li class="resaltado">Elemento 1</li>
+            <li >Elemento 2</li>
+        </ul>
+        <span class="resaltado">Soy spam</span>
+    </div>
+    
+
+</body>
+</html>

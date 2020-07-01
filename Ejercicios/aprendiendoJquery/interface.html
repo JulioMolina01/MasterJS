@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/06-interface.js"></script>
+
+    <style>
+        body {
+            background: coral;
+        }
+
+        .elemento {
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: lightblue;
+            margin: 20px;
+            float: left;
+        }
+
+        .lista li {
+            width: 80%;
+            padding: 20px;
+            border: 2px solid black;
+            background: silver;
+            list-style: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        ul .ui-selecting {
+            background: red;
+        }
+
+        ul .ui-selected {
+            background: darkcyan;
+        }
+
+        #objeto {
+            width: 50px;
+            height: 50px;
+            border: 3px solid lightgreen;
+        }
+
+        #area {
+            width: 150px;
+            height: 150px;
+            border: 4px dashed black;
+        }
+
+        .elemento {
+            background: chartreuse;
+            float: none;
+            display: none;
+        }
+    </style>
+
+    <title>JQuery UI</title>
+</head>
+
+<body>
+
+    <h1>JQueryUI</h1>
+
+    <hr>
+
+    <h2>Tooltips</h2>
+    <a href="#" title="Acceder a seccion de mis datos" id="misDatos"> Mis datos</a>
+
+    <hr>
+
+    <button id="showDialog">Mostrar Dialogo</button>
+    <h2>Cuadros de Dialogo</h2>
+    <div id="popup" title="¿Estas segudo?" style="display: none;">
+        <p>Si continuas en el curso, serás mejor programador</p>
+    </div>
+
+    <hr>
+
+    <h2>Calendario</h2>
+    <input type="text" id="calendario">
+
+    <hr>
+
+    <h2>Pestañas</h2>
+    <div id="pestanas">
+        <ul>
+            <li> <a href="#tabs-1">Inicio</a> </li>
+            <li> <a href="#tabs-2">Fotos</a> </li>
+            <li> <a href="#tabs-3">Contactos</a> </li>
+        </ul>
+        <div id="tabs-1">
+            Pestaña 1
+        </div>
+        <div id="tabs-2">
+            Pestaña 2
+        </div>
+        <div id="tabs-3">
+            Pestaña 3
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Efectos</h2>
+    <button id="mostrar" title="Muestra eventos del Div">Mostrar efectos</button>
+    <div id="cajaEfectos" class="elemento"> Efectows</div>
+
+    <ul class="lista">
+        <li>GTA 5</li>
+        <li>COD bo2</li>
+        <li>Need For Spead</li>
+        <li>Super Mario</li>
+        <li>Paladins</li>
+    </ul>
+
+    <br>
+    <div id="area">
+        Area
+    </div>
+    <br>
+    <div id="objeto">
+        Objeto
+    </div>
+    <br>
+    <div class="elemento">
+        Soy un elemento
+    </div>
+
+</body>
+
+</html>

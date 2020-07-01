@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON's y Localstorage</title>
+    <script src="js/ejercicio11.js"></script>
+    <script src="js/19-json.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: cadetblue;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: max-contain;
+            height: max-contain;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            margin: 20px;
+        }
+
+        .cajaFormu {
+            background-color: coral;
+            width: max-contain;
+            height: max-contain;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            border-radius: 20px;
+        }
+
+        .Pelis {
+            background-color: forestgreen;
+            border-radius: 20px;
+        }
+    </style>
+
+    <h1>JSON's</h1>
+
+    <div id="cajaFormu" class="box cajaFormu">
+
+        <h2>Registro de Peliculas :)</h2>
+
+        <form id="formularioAgregar">
+
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" placeholder="Nombre de la Pelicula" type="text">
+            <br><br>
+
+            <button id="submit" type="submit">Guardar</button>
+
+        </form>
+
+    </div>
+
+    <div id="elimiar" class="box cajaFormu">
+        <h2>Eliminar Pelicula</h2>
+        <form id="formularioElimiar">
+            <label>Nombre de la Pelicula:</label>
+            <input id="peliToDelet" type="text" placeholder="Film Name">
+            <br> <br>
+            <button type="submit" id="submit">Eliminar</button>
+        </form>
+    </div>
+
+    <div id="cajaPeliculas" class="box Pelis">
+        <h2>Peliculas Disponibles desde JSON's</h2>        
+        <hr>
+    </div>
+
+    <div id="datos" class="box Pelis">
+        <h2>Datos del LocalStorage</h2>
+        <h5>(Las peliculas con Comillas son obtenidas de archivos JSON's)</h5>
+        <hr>
+    </div>
+</body>
+
+</html>

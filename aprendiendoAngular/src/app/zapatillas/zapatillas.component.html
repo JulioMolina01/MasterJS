@@ -1,6 +1,6 @@
 <h2>{{titulo}}</h2>
 <ul>
-    <li>Nike</li>
-    <li>Adidas</li>
-    <li>Rebook</li>
+    <li *ngFor="let zapatilla of zapatillas">
+        {{zapatilla.marca + " " + zapatilla.color}} <strong> {{ " - $" + zapatilla.precio + ".00 / Disponibles:  " + zapatilla.stock}}</strong>
+    </li>
 </ul>

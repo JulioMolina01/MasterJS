@@ -9,16 +9,16 @@ import { Zapatilla } from '../models/zapatilla';
 export class ZapatillasComponent implements OnInit{
     public titulo = "Componente de Zapatillas";
     public zapatillas: Array<Zapatilla>;
-
+    
     constructor(){
         this.zapatillas = [
-            new Zapatilla("Adidas", "Negro", 1200, true),
-            new Zapatilla("Nike", "Gris", 900, false),
-            new Zapatilla("Vans", "Verde", 1500, true)
+            new Zapatilla("Nike","Blancos",1299,true),
+            new Zapatilla("Reebok","Rayados",800,false),
+            new Zapatilla("Adidas","Negros",699,true)
         ];
     }    
 
     ngOnInit(){
-        console.log(this.zapatillas);
+        console.log();
     }
 }

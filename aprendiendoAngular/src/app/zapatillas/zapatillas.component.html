@@ -1,12 +1,16 @@
 <h2>{{titulo}}</h2>
 <ul>
-    <li *ngFor="let tenis of zapatillas">
-        {{tenis.marca + " " + tenis.color}} <strong>{{" $" + tenis.precio}}</strong>
-        <span *ngIf="tenis.precio <=1000">  ¡¡EN OFERTA!!    </span>
-        <span 
-            *ngIf="tenis.stock == true"
+    <li *ngFor="let tenis of muchosTenis">
+        {{tenis.marca + " " + tenis.color}} 
+        
+        <span *ngIf="tenis.precio <= 1000"        
             [style.background]="tenis.stock == true ? 'green' : 'red' "
             [style.color]="tenis.stock == true ? 'white' : 'black' "
-        > Disponible</span>
+            [style.fontSize]="tenis.stock == true ? '20px' : '15px' "
+        >
+            ¡En oferta!
+            <strong> {{"- $" + tenis.precio + " -Disponibles: " + tenis.stock}} </strong>
+        </span>
     </li>
+    
 </ul>

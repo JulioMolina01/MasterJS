@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Zapatilla } from '../models/zapatilla';
+import { Tenis } from '../models/tenis'
 
 @Component({
     selector: 'zapatilla',
@@ -7,15 +7,16 @@ import { Zapatilla } from '../models/zapatilla';
 })
 
 export class ZapatillasComponent implements OnInit{
-    public titulo = "Componente de Zapatillas";
-    public zapatillas: Array<Zapatilla>;
-    
-    constructor(){
-        this.zapatillas = [
-            new Zapatilla("Nike","Blancos",1299,true),
-            new Zapatilla("Reebok","Rayados",800,false),
-            new Zapatilla("Adidas","Negros",699,true)
-        ];
+    public titulo = "Componente de Zapatillas";    
+    public muchosTenis: Array<Tenis>;
+
+    constructor(){    
+        this.muchosTenis = [
+            new Tenis("Nike","Blancos",1600,false),
+            new Tenis("Adidas","Blancos",800,true),
+            new Tenis("Puma","Rosa",499,false),
+            new Tenis("Charlie","Negro",350,true)
+        ]; 
     }    
 
     ngOnInit(){

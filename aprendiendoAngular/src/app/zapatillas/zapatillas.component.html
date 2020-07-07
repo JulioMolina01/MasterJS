@@ -1,16 +1,46 @@
 <h2>{{titulo}}</h2>
+<h3>Elige entre los colores disponibles: </h3>
 <ul>
-    <li *ngFor="let tenis of muchosTenis">
-        {{tenis.marca + " " + tenis.color}} 
-        
-        <span *ngIf="tenis.precio <= 1000"        
-            [style.background]="tenis.stock == true ? 'green' : 'red' "
-            [style.color]="tenis.stock == true ? 'white' : 'black' "
-            [style.fontSize]="tenis.stock == true ? '20px' : '15px' "
+    <li *ngFor="let color of colores">
+        {{color}}
+    </li>
+</ul>
+
+<hr>
+
+<ul>
+    <li *ngFor="let tenis of muchosTenis"
+        [style.text-decoration] = " !tenis.stock ? 'line-through' : 'none' "              
+    >
+        <span
+            [style.background] = " tenis.stock == true ? 'green' : 'red' "
         >
-            ¡En oferta!
-            <strong> {{"- $" + tenis.precio + " -Disponibles: " + tenis.stock}} </strong>
+            {{tenis.marca + " " + tenis.color}} 
         </span>
+        <strong> {{ " $" + tenis.precio }} </strong> 
+
+        <!--         para MOSTRAR solo los que cuesten menos de 1000 pelucholares  -->
+        <span *ngIf="tenis.precio <= 1000"  
+            [style.background]="tenis.precio <= 1000 ? 'green' : 'transparent' "            
+            [style.color]="tenis.precio <= 1000 ? 'white' : 'black' "
+            [style.fontSize]="tenis.precio <= 1000 ? '20px' : '15px' "
+        >                          
+            ¡En oferta!          
+        </span>        
+        
     </li>
     
+    <span>El color de mi playera es: </span>
+    <ul [ngSwitch]="color">
+        <li *ngSwitchCase="'yellow'">            
+            color: <span [ngStyle]="{'background': color}"> amarillo</span>
+        </li>
+        <li *ngSwitchCase="'red'">            
+            color: <span [ngStyle]="{'background': color}"> rojo</span>
+        </li>
+        <li *ngSwitchCase="'green'">            
+            color: <span [ngStyle]="{'background': color}"> verde</span>
+        </li>
+    </ul>
+
 </ul>

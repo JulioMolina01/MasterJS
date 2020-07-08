@@ -51,6 +51,15 @@ export class ZapatillasComponent implements OnInit{
     }
 
     borrarColor(indice){
-        this.colores.splice(indice, 1);
+        this.colores.splice(indice,1);
+    }
+
+    onBlur(){
+        console.log("Saliste del input.");
+    }
+
+    alertColor(){
+        this.colores.push(this.colorInput);    
+        alert(this.colorInput);
     }
 }

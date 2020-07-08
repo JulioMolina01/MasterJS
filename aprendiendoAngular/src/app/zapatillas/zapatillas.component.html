@@ -2,8 +2,8 @@
 
 <p>Agregar marca: </p>
 <p>
-    <input type="text" [(ngModel)]="colorInput">
-    <button (click)="getNewColor()">Mostrar Color</button>
+    <input type="text" [(ngModel)]="colorInput" (blur)="onBlur()" (keyup.enter)="alertColor()">
+    <button (click)="getNewColor()" >Mostrar Color</button>
     <button (click)="agregarInput()">Agregar Color</button>
 </p>
 <strong> {{colorInput}}</strong>
@@ -12,8 +12,8 @@
 <h3>Elige entre los colores disponibles: </h3>
 <ul>  
     <li *ngFor="let color of colores; let indice = index">
-        {{indice + " - " + color}}
-        <button (click)="borrarColor(indice)">Borrar</button>
+        {{indice + " - " + color}}        
+        <button (click)="borrarColor(indice)">Eliminar</button>
     </li>
 </ul>
 

@@ -9,10 +9,10 @@ import { Tenis } from '../models/tenis'
 export class ZapatillasComponent implements OnInit{
     public titulo = "Componente de Zapatillas";    
     public muchosTenis: Array<Tenis>;
-
     public colores: String[];
-
     public color: string;
+
+    public colorInput: string;
 
     constructor(){    
         this.muchosTenis = [
@@ -33,9 +33,24 @@ export class ZapatillasComponent implements OnInit{
 
         this.color = 'yellow';
 
+        //valor desde input
+        this.colorInput = "Fila";
+
     }    
 
     ngOnInit(){
         console.log();
+    }
+
+    getNewColor(){
+        alert(this.colorInput);
+    }
+
+    agregarInput(){
+        this.colores.push(this.colorInput);             
+    }
+
+    borrarColor(indice){
+        this.colores.splice(indice, 1);
     }
 }

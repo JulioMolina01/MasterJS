@@ -1,8 +1,19 @@
 <h2>{{titulo}}</h2>
+
+<p>Agregar marca: </p>
+<p>
+    <input type="text" [(ngModel)]="colorInput">
+    <button (click)="getNewColor()">Mostrar Color</button>
+    <button (click)="agregarInput()">Agregar Color</button>
+</p>
+<strong> {{colorInput}}</strong>
+
+<hr>
 <h3>Elige entre los colores disponibles: </h3>
-<ul>
-    <li *ngFor="let color of colores">
-        {{color}}
+<ul>  
+    <li *ngFor="let color of colores; let indice = index">
+        {{indice + " - " + color}}
+        <button (click)="borrarColor(indice)">Borrar</button>
     </li>
 </ul>
 
@@ -30,7 +41,8 @@
         
     </li>
     
-    <span>El color de mi playera es: </span>
+    <p><span>El color de mi playera es: </span></p>
+    <input type="text" [(ngModel)]="color">
     <ul [ngSwitch]="color">
         <li *ngSwitchCase="'yellow'">            
             color: <span [ngStyle]="{'background': color}"> amarillo</span>

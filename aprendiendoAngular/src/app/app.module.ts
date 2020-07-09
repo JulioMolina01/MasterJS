@@ -5,20 +5,26 @@ import { AppComponent } from './app.component';
 import { VideoJuegoComponent } from './videojuego/videojuego.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { CursosComponent } from './cursos/cursos.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component'
+import { routing,appRoutingProviders } from './app.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
     VideoJuegoComponent,
     ZapatillasComponent,
-    CursosComponent
+    CursosComponent,
+    HomeComponent    
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    appRoutingProviders
+  ],
+  bootstrap: [AppComponent]  
 })
 export class AppModule { }

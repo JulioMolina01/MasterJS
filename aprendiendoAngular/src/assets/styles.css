@@ -1,0 +1,13 @@
+.precioAlto{    
+    font-size: 18px;
+    color: white;
+    margin-left: 5px;
+}
+
+.fondoStrong{
+    background: rgb(175, 7, 7);
+}
+
+.subrayadoStrong{
+    text-decoration: line-through;
+}

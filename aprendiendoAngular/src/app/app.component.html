@@ -1,7 +1,7 @@
 
 <div [ngStyle]="{'background':config.fondo, 'border':'8px solid black', 'border-color':config.color,'padding':'10px'}">  
 
-    <h1>{{ config.titulo }} app is corriendo prrrooo!</h1>  
+    <h1>{{ config.titulo }} app is corriendo!</h1>  
     <p>{{ config.subtitulo }}</p>  
 
     <!--
@@ -9,12 +9,14 @@
     <button (click)="ocultarVJ(true)" *ngIf="!mostrarVideojuegos">Mostrar VideoJuegos</button>
 
     <videojuego *ngIf="mostrarVideojuegos"></videojuego>
-    -->
+    
     <zapatilla></zapatilla>
 
-    <!--
+    
     <cursos></cursos>   
     -->
     
+    <router-outlet></router-outlet>
+
 </div>
 

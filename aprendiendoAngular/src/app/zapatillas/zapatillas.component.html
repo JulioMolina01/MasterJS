@@ -28,7 +28,12 @@
         >
             {{tenis.marca + " " + tenis.color}} 
         </span>
-        <strong> {{ " $" + tenis.precio }} </strong> 
+        <strong [class.precioAlto]="tenis.precio >= 1000"
+                [ngClass]="{ 'fondoStrong': tenis.precio >=1000,
+                             'subrayadoStrong': tenis.precio >=1000
+        }"> 
+            {{ " $" + tenis.precio }} 
+        </strong> 
 
         <!--         para MOSTRAR solo los que cuesten menos de 1000 pelucholares  -->
         <span *ngIf="tenis.precio <= 1000"  
